@@ -15,9 +15,6 @@ public class App {
 
         PlayerOneImpl player1 = new PlayerOneImpl(name,quote);
 
-
-
-//        List<GameRules> myProf = player1.getPlayer1playerProfile();
         String profName = player1.getPlayerName();
         System.out.println(profName);
     }

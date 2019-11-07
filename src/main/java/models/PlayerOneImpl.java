@@ -40,8 +40,6 @@ public class PlayerOneImpl extends GameRules implements PlayerInterface {
 
     @Override
     public void setRoll(String roll) {
-//        super.setRoll(roll);
-//        this.playStore.add(super.getRoll());
         this.roll=roll;
         this.playStore.add(roll);
     }
