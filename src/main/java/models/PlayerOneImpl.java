@@ -1,13 +1,17 @@
 package models;
 
+import interfaces.PlayerInterface;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlayerOneImpl extends GameRules {
+public class PlayerOneImpl extends GameRules implements PlayerInterface {
 
     private List<String> playStore= new ArrayList<>();
     private String playerName;
     private String victoryQuote;
+    private String roll;
+
 
 
     public PlayerOneImpl(String playerName, String victoryQuote) {
@@ -36,8 +40,15 @@ public class PlayerOneImpl extends GameRules {
 
     @Override
     public void setRoll(String roll) {
-        super.setRoll(roll);
-        this.playStore.add(super.getRoll());
+//        super.setRoll(roll);
+//        this.playStore.add(super.getRoll());
+        this.roll=roll;
+        this.playStore.add(roll);
+    }
+
+    @Override
+    public String getRoll() {
+        return roll;
     }
 
     public List<String> getPlayStore() {

@@ -5,25 +5,21 @@ package models;
 public class GameRules {
 
 
-    private String roll;
-    private String playerName;
-    private String victoryQuote;
-//    private List<String> playStore= new ArrayList<>();
+//    private String roll;
+    //    private List<String> playStore= new ArrayList<>();
 //    private List<GameRules> playerProfile = new ArrayList<>();
 
     public GameRules(String playerName, String victoryQuote){
 
-        this.playerName=playerName;
-        this.victoryQuote=victoryQuote;
         //        playerProfile.add(this);
     }
-    public String getRoll() {
-        return roll;
-    }
+//    public String getRoll() {
+//        return roll;
+//    }
 
-    public void setRoll(String roll) {
-        this.roll = roll;
-    }
+//    public void setRoll(String roll) {
+//        this.roll = roll;
+//    }
 
 //    just became irrelevant
 //
@@ -36,13 +32,13 @@ public class GameRules {
 //        this.playerProfile = playerProfile;
 //    }
 
-    public String getPlayerName() {
-       return playerName;
-    }
-
-    public String getVictoryQuote() {
-        return victoryQuote;
-    }
+//    public String getPlayerName() {
+//       return playerName;
+//    }
+//
+//    public String getVictoryQuote() {
+//        return victoryQuote;
+//    }
 
 //    public List<GameRules> getPlayerProfile() {
 //        return playerProfile;

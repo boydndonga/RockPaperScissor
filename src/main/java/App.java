@@ -15,8 +15,6 @@ public class App {
 
         PlayerOneImpl player1 = new PlayerOneImpl(name,quote);
 
-        List<String> myRolls = player1.getPlayStore();
-        System.out.println(myRolls);
 
 
 //        List<GameRules> myProf = player1.getPlayer1playerProfile();
