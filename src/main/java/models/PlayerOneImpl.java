@@ -5,16 +5,33 @@ import java.util.List;
 
 public class PlayerOneImpl extends GameRules {
 
-    private List<String> playStore= new ArrayList<String>();
-    private List<GameRules> player1playerProfile = new ArrayList<>();
+    private List<String> playStore= new ArrayList<>();
+    private String playerName;
+    private String victoryQuote;
+
 
     public PlayerOneImpl(String playerName, String victoryQuote) {
         super(playerName, victoryQuote);
-        player1playerProfile.add(this);
+        setPlayerName(playerName);
+        setVictoryQuote(victoryQuote);
     }
 
-    public List<GameRules> getPlayer1playerProfile() {
-        return player1playerProfile;
+    @Override
+    public String getPlayerName() {
+        return playerName;
+    }
+
+    public void setPlayerName(String playerName) {
+        this.playerName = playerName;
+    }
+
+    @Override
+    public String getVictoryQuote() {
+        return victoryQuote;
+    }
+
+    public void setVictoryQuote(String victoryQuote) {
+        this.victoryQuote = victoryQuote;
     }
 
     @Override
