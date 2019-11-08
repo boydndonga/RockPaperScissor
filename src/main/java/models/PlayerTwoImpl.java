@@ -15,6 +15,7 @@ public class PlayerTwoImpl extends GameRules implements PlayerInterface {
 
     public PlayerTwoImpl(String playerName, String victoryQuote) {
         super(playerName, victoryQuote);
+        setPlayerName(playerName);
         setVictoryQuote(victoryQuote);
     }
 
